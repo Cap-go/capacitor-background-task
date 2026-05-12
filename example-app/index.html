@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@capgo/capacitor-background-task Example</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>@capgo/capacitor-background-task</h1>
+      <p class="lead">Register, inspect, and trigger a periodic background task.</p>
+
+      <label for="task-name">Task name</label>
+      <input id="task-name" type="text" value="sync-offline-data" />
+
+      <div class="actions">
+        <button id="register-task">Register</button>
+        <button id="trigger-task">Trigger test run</button>
+        <button id="unregister-task">Unregister</button>
+        <button id="get-status">Status</button>
+      </div>
+
+      <pre id="plugin-output">Press a button to run an action.</pre>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
