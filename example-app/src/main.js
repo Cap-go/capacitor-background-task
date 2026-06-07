@@ -1,7 +1,11 @@
 import { CapacitorUpdater } from '@capgo/capacitor-updater';
 import { Capacitor } from '@capacitor/core';
 import './style.css';
-import { BackgroundTask, BackgroundTaskResult, BackgroundTaskStatus } from '@capgo/capacitor-background-task';
+import {
+  BackgroundTask,
+  BackgroundTaskResult,
+  BackgroundTaskStatus,
+} from '@capgo/capacitor-background-task';
 
 const output = document.getElementById('plugin-output');
 const taskNameInput = document.getElementById('task-name');
