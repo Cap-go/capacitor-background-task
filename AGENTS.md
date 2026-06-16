@@ -24,3 +24,7 @@ Guidance for agents and contributors working on `@capgo/capacitor-background-tas
 ## API Docs
 
 The generated README API section comes from `src/definitions.ts`. Update JSDoc there and run `bun run docgen`; do not edit the generated API section by hand.
+
+## Timeout Policy
+
+- Keep CI, script, and runtime timeouts at 10 minutes or less. Use `timeout-minutes: 10` or lower in GitHub Actions and cap timeout values at `600000` ms, `600` seconds, or `10m` unless explicitly requested.
