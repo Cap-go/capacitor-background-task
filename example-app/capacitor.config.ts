@@ -4,7 +4,7 @@ import pkg from './package.json';
 
 const config: CapacitorConfig = {
   appId: 'app.capgo.backgroundtask.example',
-  appName: 'Background Task Example',
+  appName: '@capgo/capacitor-background-task',
   webDir: 'dist',
   plugins: {
     SplashScreen: {
