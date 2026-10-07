@@ -1,13 +1,28 @@
 # @capgo/capacitor-background-task
 
-<a href="https://capgo.app/"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-background-task" alt="Capgo - Instant updates for Capacitor" /></a>
+Run periodic background tasks in your Capacitor app on iOS and Android, with named tasks that survive app restarts. Sync data or refresh content while the app is not open.
+
+<a href="https://capgo.app/?ref=plugin_background_task"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-background-task" alt="Capgo - Instant updates for Capacitor" /></a>
 
 <div align="center">
-  <h2><a href="https://capgo.app/?ref=plugin_background_task">Get instant updates for your app with Capgo</a></h2>
-  <h2><a href="https://capgo.app/consulting/?ref=plugin_background_task">Need a plugin feature? We can build it</a></h2>
+  <p><b>Capgo</b>: open-source live updates for Ionic and Capacitor apps. Ship OTA fixes and features instantly, without waiting for app store review.</p>
+  <h2><a href="https://capgo.app/register/?ref=plugin_background_task">➡️ Get started for free</a></h2>
+  <p>14-day unlimited free trial. No credit card required</p>
+  <p><a href="https://capgo.app/consulting/?ref=plugin_background_task">Missing a feature? We'll build the plugin for you 💪</a></p>
 </div>
 
-Periodic background task scheduling for Capacitor apps. It follows the practical feature set of Expo BackgroundTask: named tasks, persistent registration, status checks, unregistering, a testing trigger, and iOS expiration events.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Cap-go/capacitor-background-task/main/assets/github-social-preview.png" alt="@capgo/capacitor-background-task for Capacitor apps" width="300" />
+</p>
+
+## Key features
+
+- **Named tasks**: `registerTaskAsync()` and `unregisterTaskAsync()` with options like `minimumInterval` and `requiresNetwork`.
+- **Status**: `isTaskRegisteredAsync()`, `getRegisteredTasksAsync()` and `getStatusAsync()` report what is scheduled and available.
+- **Missed runs**: `getPendingTaskRunsAsync()` returns runs recorded natively before JavaScript was ready.
+- **Testing**: `triggerTaskWorkerForTestingAsync()` runs all registered tasks right away during development.
+- **Familiar API**: an Expo BackgroundTask style API plus React Native background-task compatible `schedule()`, `cancel()` and `finish()`.
+- **Platforms**: iOS and Android. iOS uses BackgroundTasks, Android uses WorkManager. Web is a stub.
 
 ## What It Does
 
